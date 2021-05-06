@@ -4,8 +4,6 @@ import MemoizedLinkDisplay from "./links/links";
 import switchImages from "./switchImages";
 import images from "../input/imagesNames";
 import links from "../input/linksArray"; 
-import "../App.css"
-
 
   const Map = () => {
   const [state, setState] = useState({value: {scale: 0.2, translation: {x:0, y:0}}});
