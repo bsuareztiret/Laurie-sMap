@@ -2,7 +2,7 @@ const { getMetaData } = require('page-metadata-parser');
 const domino = require('domino');
 const fetch = require('node-fetch');
 
-exports.pagesController = async (req, res) => {
+exports.pagesScrapper = async (req, res) => {
   const url = 'https://fr.wikipedia.org/wiki/Nelson_Mandela';
   const response = await fetch(url);
   const html = await response.text();

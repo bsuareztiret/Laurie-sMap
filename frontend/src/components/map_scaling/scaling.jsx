@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
-import MemoizedLinkDisplay from "./links/links";
-import switchImages from "./switchImages";
-import images from "../input/imagesNames";
-import links from "../input/linksArray"; 
+import switchScalingBackground from "../switch-background";
+import images from "../../input/imagesNames";
 
-  const Map = () => {
-  const [state, setState] = useState({value: {scale: 0.2, translation: {x:0, y:0}}});
+  const Scaling = (links) => {
+  const [state, setState] = useState({value: {scale: 0.5, translation: {x:300, y:150}}});
   const [scale, setScale] = useState(0);
-  const [maxX, setMaxX] = useState(2353);
-  const [minX, setMinX] = useState(2353);
-  const [maxY, setMaxY] = useState(2353);
-  const [minY, setMinY] = useState(2353);
+  const [maxX, setMaxX] = useState(500);
+  const [minX, setMinX] = useState(500);
+  const [maxY, setMaxY] = useState(500);
+  const [minY, setMinY] = useState(500);
 
   const scaleUp = () => {
     console.log("Le scale UP", scale);
@@ -55,22 +53,23 @@ import links from "../input/linksArray";
     setState({ value });
   }
 
+  const findFloor = () => {
+    const index = switchScalingBackground({scale: state.value.scale, length: images.length});
+    return index;
+  }
+
   return (
     <MapInteractionCSS
       value={state.value}
       onChange={(value) => setUpLimit(value)}
       translationBounds={{ xMin: -minX, xMax: maxX, yMin: -minY, yMax: maxY}}
     >
-			{/* <p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p> */}
-      {/* FIXME: probleme quand tu zoom au max, tous disparait,
-        si la balise header n'est pas la,
-        alors on ne peut revenir en arrièe..  */}
-      <header className="App-header">
-        <MemoizedLinkDisplay link={links} />
-				<img src={images[switchImages({scale: state.value.scale, length: images.length})]} className="image" alt="test" />
-			</header>
+			<p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
+        {links.links[findFloor()]}
+				<img src={images[findFloor()]} className="image" alt="test" />
+			<p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
     </MapInteractionCSS>
   )
 }
 
-export default Map;
+export default Scaling;

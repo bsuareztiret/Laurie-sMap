@@ -1,7 +1,7 @@
 const express = require('express');
 router = express.Router();
-const { pagesController } = require('../controllers/pagesControllers');
+const { pagesScrapper } = require('../controllers/pagesScrapper');
 
-router.get('/', pagesController);
+router.get('/', pagesScrapper);
 
 module.exports = router;

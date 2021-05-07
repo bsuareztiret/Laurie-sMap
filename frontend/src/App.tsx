@@ -1,10 +1,17 @@
-import React from "react";
-import Map from "./components/map";
+import React, { useState } from "react";
+import redDot from "./img/red-dot-icon.png";
+import Map from "./components/map_scaling/map";
+import switchScalingBackground from "./components/switch-background";
 
 const App: React.FunctionComponent = () => {
+	const [loading, setLoading] = useState(false);
+
 	return (
-		<div className="bg-gray-200 flex items-center justify-center h-screen">
-			<Map />
+		<div>
+			{loading && (
+				<img src={redDot} alt="loading" onClick={() => setLoading(!loading)} />
+			)}
+			{!loading && <Map />}
 		</div>
 	);
 };
