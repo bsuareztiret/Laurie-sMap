@@ -33,7 +33,7 @@ const LinkDisplay: React.FC<LinkDisplayProps> = ({
 		return null;
 	});
 
-	return <div>{list}</div>;
+	return <div style={{ position: "absolute", width: "50%" }}>{list}</div>;
 };
 
 export default LinkDisplay;

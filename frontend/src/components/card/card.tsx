@@ -16,7 +16,7 @@ const Card: React.FunctionComponent<CardProps> = ({
 }) => {
 	return (
 		<div
-			className="z-40 bg-gray-25 rounded overflow-hidden shadow-md max-w-sm"
+			className="z-40 bg-gray-25 rounded overflow-hidden shadow-md max-w-xs max-h-xs"
 			style={style}
 		>
 			<div className="w-full h-32 sm:h-48 object-cover">{component}</div>

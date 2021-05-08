@@ -7,7 +7,7 @@ const App: React.FunctionComponent = () => {
 	const [loading, setLoading] = useState(false);
 
 	return (
-		<div>
+		<div className="bg-gray-800">
 			{loading && (
 				<img src={redDot} alt="loading" onClick={() => setLoading(!loading)} />
 			)}

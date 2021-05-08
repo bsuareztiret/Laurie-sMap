@@ -32,7 +32,12 @@ const DisplayType: React.FunctionComponent<DisplayTypeProps> = ({
 					{!button && (
 						<img
 							src={redDot}
-							style={{ position: "relative", top, left, width: 50, height: 50 }}
+							className="z-40 bg-gray-25 rounded overflow-hidden shadow-md max-w-xs max-h-xs opacity-20"
+							style={{
+								top: `${top % 100}%`,
+								left: `${left % 100}%`,
+								position: "relative",
+							}}
 							onClick={switchButton}
 							alt="red-dot"
 						/>
@@ -41,7 +46,7 @@ const DisplayType: React.FunctionComponent<DisplayTypeProps> = ({
 						<Card
 							close={switchButton}
 							link={"ok"}
-							style={{ position: "relative", top, left, zIndex: 40 }}
+							style={{ top: `${top % 100}%`, left: `${left % 100}%`, zIndex: 40 }}
 							component={
 								<img
 									src={href}
@@ -61,7 +66,13 @@ const DisplayType: React.FunctionComponent<DisplayTypeProps> = ({
 					{!button && (
 						<img
 							src={redDot}
-							style={{ position: "relative", top, left, width: 50, height: 50 }}
+							style={{
+								top: `${top % 100}%`,
+								left: `${left % 100}%`,
+								position: "relative",
+								width: 50,
+								height: 50,
+							}}
 							onClick={switchButton}
 							alt="red-dot"
 						/>
@@ -71,9 +82,8 @@ const DisplayType: React.FunctionComponent<DisplayTypeProps> = ({
 							close={switchButton}
 							link={"ok"}
 							style={{
-								position: "relative",
-								top,
-								left,
+								top: `${top % 100}%`,
+								left: `${left % 100}%`,
 								zIndex: 40,
 							}}
 							component={
@@ -98,7 +108,13 @@ const DisplayType: React.FunctionComponent<DisplayTypeProps> = ({
 					{!button && (
 						<img
 							src={redDot}
-							style={{ position: "relative", top, left, width: 50, height: 50 }}
+							style={{
+								top: `${top % 100}%`,
+								left: `${left % 100}%`,
+								position: "relative",
+								width: 50,
+								height: 50,
+							}}
 							onClick={switchButton}
 							alt="red-dot"
 						/>
@@ -108,9 +124,9 @@ const DisplayType: React.FunctionComponent<DisplayTypeProps> = ({
 							close={switchButton}
 							link={"ok"}
 							style={{
+								top: `${top % 100}%`,
+								left: `${left % 100}%`,
 								position: "relative",
-								top,
-								left,
 								zIndex: 40,
 							}}
 							component={

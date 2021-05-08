@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
 import switchScalingBackground from "../switch-background";
 import images from "../../input/imagesNames";
+import Test from "./test";
 
   const Scaling = (links) => {
   const [state, setState] = useState({value: {scale: 0.5, translation: {x:300, y:150}}});
@@ -61,13 +62,15 @@ import images from "../../input/imagesNames";
   return (
     <MapInteractionCSS
       value={state.value}
+      className="grid grid-colone-2"
       onChange={(value) => setUpLimit(value)}
       translationBounds={{ xMin: -minX, xMax: maxX, yMin: -minY, yMax: maxY}}
     >
-			<p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
-        {links.links[findFloor()]}
-				<img src={images[findFloor()]} className="image" alt="test" />
-			<p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
+      <Test state={state} links={links}/>
+			{/* <p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p> */}
+        {/* {links.links[findFloor()]} */}
+				{/* <img src={images[findFloor()]} className="image" alt="test" /> */}
+			{/* <p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p> */}
     </MapInteractionCSS>
   )
 }
