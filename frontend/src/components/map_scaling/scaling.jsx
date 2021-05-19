@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
-import switchScalingBackground from "../switch-background";
+import switchScalingBackground from "../links/switch-background";
 import images from "../../input/imagesNames";
-import Test from "./test";
 
   const Scaling = (links) => {
   const [state, setState] = useState({value: {scale: 0.5, translation: {x:300, y:150}}});
   const [scale, setScale] = useState(0);
-  const [maxX, setMaxX] = useState(500);
-  const [minX, setMinX] = useState(500);
-  const [maxY, setMaxY] = useState(500);
-  const [minY, setMinY] = useState(500);
+  const [maxX, setMaxX] = useState(800);
+  const [minX, setMinX] = useState(800);
+  const [maxY, setMaxY] = useState(800);
+  const [minY, setMinY] = useState(800);
 
   const scaleUp = () => {
     console.log("Le scale UP", scale);
@@ -66,11 +65,10 @@ import Test from "./test";
       onChange={(value) => setUpLimit(value)}
       translationBounds={{ xMin: -minX, xMax: maxX, yMin: -minY, yMax: maxY}}
     >
-      <Test state={state} links={links}/>
-			{/* <p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p> */}
-        {/* {links.links[findFloor()]} */}
-				{/* <img src={images[findFloor()]} className="image" alt="test" /> */}
-			{/* <p>{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p> */}
+			<p className="text-white">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
+        {links.links[findFloor()]}
+				<img src={images[findFloor()]} className="image" alt="test" />
+			<p className="text-white">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
     </MapInteractionCSS>
   )
 }

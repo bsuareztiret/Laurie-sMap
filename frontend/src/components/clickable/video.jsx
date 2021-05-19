@@ -6,8 +6,6 @@ const VideoPlayer = (props) => {
     <ReactPlayer url={props.url}
     width={props.width}
     height={props.height}
-    style={props.style}
-    id={props.id}
     controls={true}
     pip={true} />
   )

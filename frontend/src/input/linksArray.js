@@ -2,50 +2,50 @@ import Ok from "../img/maison1.png";
 
 const linkArray = [
   {
-    top: 1300,
-    left: 750,
-    href: "https://www.nts.live/infinite-mixtapes/slow-focus",
-    floor: 0,
-    type: "link"
-  },
-  {
-    top: 800,
-    left: 500,
-    href: "https://www.nts.live/infinite-mixtapes/slow-focus",
-    floor: 1,
-    type: "link"
-  },
-  {
-    top: 1000,
-    left: 100,
-    href: "https://www.nts.live/infinite-mixtapes/slow-focus",
-    floor: 0,
-    type: "link"
-  },
-  {
-    top: 200,
-    left: 800,
-    href: "https://www.nts.live/infinite-mixtapes/slow-focus",
-    floor: 0,
-    type: "link"
-  },
-  {
-    top: 700,
-    left: 900,
-    href: Ok,
-    floor: 1,
-    type: "image"
-  },
-  {
-    top: 700,
-    left: 900,
+    top: 10,
+    left: 75,
     href: Ok,
     floor: 0,
     type: "image"
   },
   {
-    top: 850,
-    left: 1200,
+    top: 8,
+    left: 50,
+    href: "https://www.youtube.com/watch?v=nmDFmI2oNBY",
+    floor: 1,
+    type: "player"
+  },
+  {
+    top: 10,
+    left: 12,
+    href: Ok,
+    floor: 0,
+    type: "image"
+  },
+  {
+    top: 2,
+    left: 80,
+    href: Ok,
+    floor: 0,
+    type: "image"
+  },
+  {
+    top: 7,
+    left: 90,
+    href: Ok,
+    floor: 1,
+    type: "image"
+  },
+  {
+    top: 4,
+    left: 90,
+    href: Ok,
+    floor: 0,
+    type: "image"
+  },
+  {
+    top: 85,
+    left: 12,
     href: "https://www.youtube.com/watch?v=nmDFmI2oNBY",
     floor: 0,
     type: "player"
