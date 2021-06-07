@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bsuareztiret.github.io/Laurie-sMap/",
   "name": "ts-rt",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "classnames": "^2.3.1",
+    "gh-pages": "^3.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-map-interaction": "^2.0.0",
@@ -22,6 +24,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build:tailwind": "tailwindcss build src/index.css -o src/tailwind.output.css",
     "prestart": "npm run build:tailwind",
     "prebuild": "npm run build:tailwind",
