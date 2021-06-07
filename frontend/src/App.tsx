@@ -1,16 +1,10 @@
-import React, { useState } from "react";
-import redDot from "./img/red-dot-icon.png";
+import React from "react";
 import Map from "./components/map_scaling/map";
 
 const App: React.FunctionComponent = () => {
-	const [loading, setLoading] = useState(false);
-
 	return (
-		<div className="bg-gray-800">
-			{loading && (
-				<img src={redDot} alt="loading" onClick={() => setLoading(!loading)} />
-			)}
-			{!loading && <Map />}
+		<div style={{ backgroundColor: "#fdffea", width: 2048, height: 1448 }}>
+			<Map />
 		</div>
 	);
 };

@@ -6,6 +6,7 @@ type LinksDisplayProps = {
 		top: number;
 		left: number;
 		href: string;
+		image: string;
 		floor: number;
 		type: string;
 	}[];
@@ -25,7 +26,8 @@ const LinksDisplay: React.FC<LinksDisplayProps> = ({
 					<LinksConstructor
 						top={element.top}
 						left={element.left}
-						image={element.href}
+						image={element.image}
+						href={element.href}
 						type={element.type}
 						index={index}
 					/>

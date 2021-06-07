@@ -16,14 +16,14 @@ const Icon: React.FunctionComponent<IconProps> = ({
 	return (
 		<img
 			src={image}
-			className="z-30 bg-gray-25 rounded overflow-hidden shadow-md max-w-xs max-h-xs opacity-20 object-left-bottom"
+			className="z-30 overflow-hidden max-w-xs max-h-xs object-left-bottom"
 			style={{
 				top: `${top}%`,
 				left: `${left}%`,
 				cursor: "touch",
 				position: "relative",
-				width: "10%",
-				height: "10%",
+				width: "10px",
+				height: "10px",
 			}}
 			onPointerDown={switchButton}
 			onClick={switchButton}

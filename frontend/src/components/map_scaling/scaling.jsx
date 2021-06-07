@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
 import switchScalingBackground from "../links/switch-background";
-import images from "../../input/imagesNames";
+// import images from "../../input/imagesNames";
+import images from "../../img/two.jpg";
 
   const Scaling = (links) => {
   const [state, setState] = useState({value: {scale: 0.5, translation: {x:300, y:150}}});
@@ -54,7 +55,8 @@ import images from "../../input/imagesNames";
   }
 
   const findFloor = () => {
-    const index = switchScalingBackground({scale: state.value.scale, length: images.length});
+    // const index = switchScalingBackground({scale: state.value.scale, length: images.length});
+    const index = switchScalingBackground({scale: state.value.scale, length: 2});
     return index;
   }
 
@@ -65,10 +67,10 @@ import images from "../../input/imagesNames";
       onChange={(value) => setUpLimit(value)}
       translationBounds={{ xMin: -minX, xMax: maxX, yMin: -minY, yMax: maxY}}
     >
-			<p className="text-white">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
+			<p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
         {links.links[findFloor()]}
-				<img src={images[findFloor()]} className="image" alt="test" />
-			<p className="text-white">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
+				<img src={images} alt="test" />
+			<p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
     </MapInteractionCSS>
   )
 }
