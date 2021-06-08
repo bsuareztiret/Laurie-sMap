@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
 import switchScalingBackground from "../links/switch-background";
 // import images from "../../input/imagesNames";
-import images from "../../img/two.jpg";
+import background from "../../img/background.jpeg";
 
   const Scaling = (links) => {
   const [state, setState] = useState({value: {scale: 0.5, translation: {x:300, y:150}}});
@@ -14,11 +14,15 @@ import images from "../../img/two.jpg";
 
   const scaleUp = () => {
     console.log("Le scale UP", scale);
-    setMaxX(maxX * 1.3)
-    setMaxY(maxY * 1.3)
+    // setMaxX(maxX * 1.3)
+    // setMaxY(maxY * 1.3)
+    setMaxX(maxX * 1.5)
+    setMaxY(maxY * 1.5)
     // go check this for the perfect range
-    setMinX(minX * 1.58)
-    setMinY(minY * 2.08)
+    // setMinX(minX * 1.58)
+    // setMinY(minY * 2.08)
+    setMinX(minX * 2.10)
+    setMinY(minY * 2.10)
     console.log(`MaxX: ${maxX} MinX: ${minX}`);
     console.log(`MaxY: ${maxY} MinY: ${minY}`);
 
@@ -27,11 +31,15 @@ import images from "../../img/two.jpg";
 
   const scaleDown = () => {
     console.log("Le scale DOWN", scale);
-    setMaxX(maxX / 1.3)
-    setMaxY(maxY / 1.3)
+    setMaxX(maxX / 1.5)
+    setMaxY(maxY / 1.5)
+    // setMaxX(maxX / 1.3)
+    // setMaxY(maxY / 1.3)
     // go check this for the perfect range
-    setMinX(minX / 1.58)
-    setMinY(minY / 2.08)
+    // setMinX(minX / 1.58)
+    // setMinY(minY / 2.08)
+    setMinX(minX / 2.1)
+    setMinY(minY / 2.1)
     console.log(`MaxX: ${maxX} MinX: ${minX}`);
     console.log(`MaxY: ${maxY} MinY: ${minY}`);
 
@@ -69,7 +77,7 @@ import images from "../../img/two.jpg";
     >
 			<p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
         {links.links[findFloor()]}
-				<img src={images} alt="test" />
+				<img src={background} alt="test" />
 			<p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
     </MapInteractionCSS>
   )

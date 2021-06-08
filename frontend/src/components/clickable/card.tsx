@@ -1,5 +1,4 @@
 import React from "react";
-import VideoPlayer from "./video";
 
 type CardProps = {
 	type: string;
@@ -32,9 +31,13 @@ const Card: React.FunctionComponent<CardProps> = ({
 				minHeight: 150,
 			}}
 		>
-			{/* <div className="m-4 grid grid-cols-8 gap-2" style={{ position: "relative" }}> */}
 			<button
-				className="col-start-7 text-gray-400"
+				className="text-red-400"
+				style={{
+					position: "absolute",
+					top: "1px",
+					right: "8px",
+				}}
 				onPointerDown={switchButton}
 				onClick={switchButton}
 			>
@@ -46,13 +49,8 @@ const Card: React.FunctionComponent<CardProps> = ({
 				target="_blank"
 				rel="noreferrer"
 			>
-				{">"}
+				<img src={image} alt="preview google maps" />
 			</a>
-			{/* </div> */}
-			{type === "image" && (
-				// <img src={image} alt="ok" className="w-full h-32 sm:h-48 object-cover" />
-				<img src={image} alt="ok" />
-			)}
 		</div>
 	);
 };
