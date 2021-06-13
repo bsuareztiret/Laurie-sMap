@@ -22,8 +22,8 @@ const Icon: React.FunctionComponent<IconProps> = ({
 				left: `${left}%`,
 				cursor: "touch",
 				position: "relative",
-				width: "10px",
-				height: "10px",
+				width: "20px",
+				height: "20px",
 			}}
 			onPointerDown={switchButton}
 			onClick={switchButton}

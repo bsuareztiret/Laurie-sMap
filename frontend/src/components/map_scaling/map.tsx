@@ -7,7 +7,8 @@ import linkArray from "../../input/linksArray";
 const Map: React.FunctionComponent = () => {
 	const linksArray: any[] = [];
 	useEffect(() => {
-		for (let index = 0; index <= 1; index++) {
+		for (let index = 0; index <= 3; index++) {
+			console.log("floor", index);
 			linksArray.push(<LinksDisplay link={linkArray} floor={index} />);
 		}
 	});

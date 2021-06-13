@@ -11,13 +11,11 @@ type CardProps = {
 };
 
 const Card: React.FunctionComponent<CardProps> = ({
-	type,
 	image,
 	href,
 	top,
 	left,
 	switchButton,
-	index,
 }) => {
 	return (
 		<div
@@ -28,20 +26,19 @@ const Card: React.FunctionComponent<CardProps> = ({
 				position: "relative",
 				width: "12%",
 				height: "10%",
-				minHeight: 150,
 			}}
 		>
 			<button
-				className="text-red-400"
+				className="text-black"
 				style={{
 					position: "absolute",
-					top: "1px",
-					right: "8px",
+					top: "-10.5px",
+					right: "1px",
 				}}
 				onPointerDown={switchButton}
 				onClick={switchButton}
 			>
-				x
+				⨯
 			</button>
 			<a
 				className="col-start-8 text-gray-400"

@@ -7,6 +7,7 @@ type LinksDisplayProps = {
 		left: number;
 		href: string;
 		image: string;
+		icon: string;
 		floor: number;
 		type: string;
 	}[];
@@ -20,13 +21,15 @@ const LinksDisplay: React.FC<LinksDisplayProps> = ({
 	floor,
 }: LinksDisplayProps) => {
 	const list = link.map((element, index) => {
-		if (floor === element.floor) {
+		if (floor > element.floor) {
+			console.log("floor | element.floor", floor, element.floor);
 			return (
 				<div style={{ position: "absolute", width: "100%", height: "100%" }}>
 					<LinksConstructor
 						top={element.top}
 						left={element.left}
 						image={element.image}
+						icon={element.icon}
 						href={element.href}
 						type={element.type}
 						index={index}

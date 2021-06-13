@@ -1,16 +1,15 @@
 import { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
 import switchScalingBackground from "../links/switch-background";
-// import images from "../../input/imagesNames";
-import background from "../../img/background.jpeg";
+import background from "../../img/backgroundG.jpg";
 
   const Scaling = (links) => {
-  const [state, setState] = useState({value: {scale: 0.5, translation: {x:300, y:150}}});
+  const [state, setState] = useState({value: {scale: 0.5, translation: {x:800, y:400}}});
   const [scale, setScale] = useState(0);
-  const [maxX, setMaxX] = useState(800);
+  const [maxX, setMaxX] = useState(1100);
   const [minX, setMinX] = useState(800);
-  const [maxY, setMaxY] = useState(800);
-  const [minY, setMinY] = useState(800);
+  const [maxY, setMaxY] = useState(1000);
+  const [minY, setMinY] = useState(500);
 
   const scaleUp = () => {
     console.log("Le scale UP", scale);
@@ -64,8 +63,23 @@ import background from "../../img/background.jpeg";
 
   const findFloor = () => {
     // const index = switchScalingBackground({scale: state.value.scale, length: images.length});
-    const index = switchScalingBackground({scale: state.value.scale, length: 2});
-    return index;
+    
+    // const index = switchScalingBackground({scale: state.value.scale, length: 2});
+    if (state.value.scale >= 0.7 && state.value.scale < 0.85) {
+      console.log("floor: ", 0);
+      return 0;
+    } else if (state.value.scale >= 0.85 && state.value.scale < 1) {
+      console.log("floor: ", 1);
+      return 1;
+    } else if (state.value.scale >= 1 && state.value.scale < 1.15) {
+      console.log("floor: ", 2);
+      return 2;
+    } else if (state.value.scale >= 1.15) {
+      console.log("floor: ", 3);
+      return 3;
+    } else {
+      return 666;
+    }
   }
 
   return (
@@ -75,10 +89,10 @@ import background from "../../img/background.jpeg";
       onChange={(value) => setUpLimit(value)}
       translationBounds={{ xMin: -minX, xMax: maxX, yMin: -minY, yMax: maxY}}
     >
-			<p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
+			{/* <p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p> */}
         {links.links[findFloor()]}
 				<img src={background} alt="test" />
-			<p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p>
+			{/* <p className="text-black">{`SCALE: ${state.value.scale}, X: ${state.value.translation.x}, Y: ${state.value.translation.y}`}</p> */}
     </MapInteractionCSS>
   )
 }
