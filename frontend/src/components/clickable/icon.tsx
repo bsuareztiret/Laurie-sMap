@@ -1,4 +1,5 @@
 import React from "react";
+import "./icon.css";
 
 type IconProps = {
 	image: string;
@@ -16,7 +17,9 @@ const Icon: React.FunctionComponent<IconProps> = ({
 	return (
 		<img
 			src={image}
-			className="z-30 overflow-hidden max-w-xs max-h-xs object-left-bottom"
+			// className="z-30 overflow-hidden max-w-xs max-h-xs object-left-bottom"
+			className="z-30"
+      id="icon"
 			style={{
 				top: `${top}%`,
 				left: `${left}%`,
@@ -27,7 +30,7 @@ const Icon: React.FunctionComponent<IconProps> = ({
 			}}
 			onPointerDown={switchButton}
 			onClick={switchButton}
-			alt="red-dot"
+			alt="icon-textile"
 		/>
 	);
 };

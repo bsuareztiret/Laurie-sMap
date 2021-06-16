@@ -4,7 +4,7 @@ import switchScalingBackground from "../links/switch-background";
 import background from "../../img/backgroundG.jpg";
 
   const Scaling = (links) => {
-  const [state, setState] = useState({value: {scale: 0.5, translation: {x:800, y:400}}});
+  const [state, setState] = useState({value: {scale: 0.5, translation: {x:213, y:70}}});
   const [scale, setScale] = useState(0);
   const [maxX, setMaxX] = useState(1100);
   const [minX, setMinX] = useState(800);
