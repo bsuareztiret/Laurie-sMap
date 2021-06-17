@@ -25,7 +25,8 @@ const LinksDisplay: React.FC<LinksDisplayProps> = ({
       // if (floor <= element.floor) {
 			// console.log("floor | element.floor", floor, element.floor);
 			return (
-				<div style={{ position: "absolute", width: "100%", height: "100%" }}>
+				<div style={{ position: "absolute", width: "100%", height: "100%" }}
+				key={`index:${index}-${element.href}`}>
 					<LinksConstructor
 						top={element.top}
 						left={element.left}

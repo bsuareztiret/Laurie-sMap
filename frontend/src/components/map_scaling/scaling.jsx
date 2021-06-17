@@ -12,7 +12,7 @@ import background from "../../img/backgroundG.jpg";
   const [minY, setMinY] = useState(800);
 
   const scaleUp = () => {
-    console.log("Le scale UP", scale);
+    // console.log("Le scale UP", scale);
     // setMaxX(maxX * 1.3)
     // setMaxY(maxY * 1.3)
     setMaxX(maxX * 1.5)
@@ -22,14 +22,14 @@ import background from "../../img/backgroundG.jpg";
     // setMinY(minY * 2.08)
     setMinX(minX * 2.10)
     setMinY(minY * 2.10)
-    console.log(`MaxX: ${maxX} MinX: ${minX}`);
-    console.log(`MaxY: ${maxY} MinY: ${minY}`);
+    // console.log(`MaxX: ${maxX} MinX: ${minX}`);
+    // console.log(`MaxY: ${maxY} MinY: ${minY}`);
 
     setScale(scale + 1);
   }
 
   const scaleDown = () => {
-    console.log("Le scale DOWN", scale);
+    // console.log("Le scale DOWN", scale);
     setMaxX(maxX / 1.5)
     setMaxY(maxY / 1.5)
     // setMaxX(maxX / 1.3)
@@ -39,8 +39,8 @@ import background from "../../img/backgroundG.jpg";
     // setMinY(minY / 2.08)
     setMinX(minX / 2.1)
     setMinY(minY / 2.1)
-    console.log(`MaxX: ${maxX} MinX: ${minX}`);
-    console.log(`MaxY: ${maxY} MinY: ${minY}`);
+    // console.log(`MaxX: ${maxX} MinX: ${minX}`);
+    // console.log(`MaxY: ${maxY} MinY: ${minY}`);
 
     setScale(scale - 1);
   }
@@ -66,16 +66,16 @@ import background from "../../img/backgroundG.jpg";
     
     // const index = switchScalingBackground({scale: state.value.scale, length: 2});
     if (state.value.scale >= 0.7 && state.value.scale < 0.85) {
-      console.log("floor: ", 0);
+      // console.log("floor: ", 0);
       return 0;
     } else if (state.value.scale >= 0.85 && state.value.scale < 1) {
-      console.log("floor: ", 1);
+      // console.log("floor: ", 1);
       return 1;
     } else if (state.value.scale >= 1 && state.value.scale < 1.15) {
-      console.log("floor: ", 2);
+      // console.log("floor: ", 2);
       return 2;
     } else if (state.value.scale >= 1.15) {
-      console.log("floor: ", 3);
+      // console.log("floor: ", 3);
       return 3;
     } else {
       return 666;

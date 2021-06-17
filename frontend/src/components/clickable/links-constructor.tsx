@@ -34,11 +34,11 @@ const LinksConstructor: React.FC<LinksConstructorProps> = ({
 	};
 	return (
 		<React.Fragment>
-			<ReactCSSTransitionGroup
+			{/* <ReactCSSTransitionGroup
 				transitionName="fade"
 				transitionEnterTimeout={300}
 				transitionLeaveTimeout={300}
-			>
+			> */}
 				{!button && !appears && (
 					<Icon image={icon} top={top} left={left} switchButton={switchButton} />
 				)}
@@ -53,7 +53,7 @@ const LinksConstructor: React.FC<LinksConstructorProps> = ({
 						index={index}
 					/>
 				)}
-			</ReactCSSTransitionGroup>
+			{/* </ReactCSSTransitionGroup> */}
 		</React.Fragment>
 	);
 };
