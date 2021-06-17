@@ -1,4 +1,5 @@
 import React from "react";
+import "./card.css";
 
 type CardProps = {
 	type: string;
@@ -19,13 +20,13 @@ const Card: React.FunctionComponent<CardProps> = ({
 }) => {
 	return (
 		<div
-			className="z-40 overflow-hidden max-w-xs max-h-xs"
+			className="z-40 overflow-hidden max-w-xs max-h-xs preview"
 			style={{
 				top: `${top}%`,
 				left: `${left}%`,
 				position: "relative",
-				width: "12%",
-				height: "10%",
+				// width: "12%",
+				// height: "10%",
 			}}
 		>
 			<button

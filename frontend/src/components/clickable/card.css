@@ -1,3 +1,13 @@
+.preview {
+	width: 12%;
+	height: 10%;
+}
+
+.preview:hover {
+	width: 12.5%;
+	height: 10.5%;
+}
+
 .fade-enter {
 	opacity: 0;
 }

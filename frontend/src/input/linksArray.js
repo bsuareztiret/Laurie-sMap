@@ -186,7 +186,7 @@ const linkArray = [
   {
     // INDEX - 13
     // gand98 FLOOR 3
-    top: 65.2,
+    top: 66,
     left: 37.5,
     href: "https://www.google.com/maps/@51.0407493,3.7175388,3a,56.6y,80.21h,110.33t/data=!3m7!1e1!3m5!1stQbIBFzeYl9imwQ_97CiNA!2e0!5s20200801T000000!7i13312!8i6656",
     image: gand98,
