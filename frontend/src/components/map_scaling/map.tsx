@@ -8,7 +8,7 @@ const Map: React.FunctionComponent = () => {
 	const linksArray: any[] = [];
 	useEffect(() => {
 		for (let index = 0; index <= 3; index++) {
-			console.log("floor", index);
+			// console.log("floor", index);
 			linksArray.push(<LinksDisplay link={linkArray} floor={index} />);
 		}
 	});

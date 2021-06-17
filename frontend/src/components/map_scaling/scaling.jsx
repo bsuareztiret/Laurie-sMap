@@ -9,7 +9,7 @@ import background from "../../img/backgroundG.jpg";
   const [maxX, setMaxX] = useState(1100);
   const [minX, setMinX] = useState(800);
   const [maxY, setMaxY] = useState(1000);
-  const [minY, setMinY] = useState(500);
+  const [minY, setMinY] = useState(800);
 
   const scaleUp = () => {
     console.log("Le scale UP", scale);

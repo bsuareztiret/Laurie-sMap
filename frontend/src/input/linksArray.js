@@ -199,7 +199,7 @@ const linkArray = [
     // MONTAGNE FLOOR 3
     top: 44,
     left: 49,
-    href: "https://www.google.be/maps/@50.8490558,4.3619494,3a,75y,5.09h,107.16t/data=!3m7!1e1!3m5!1sU7yiZoIf-rfUVPs_EZ5vCw!2e0!5s20090601T000000!7i13312!8i6656",
+    href: "https://www.google.be/maps/@50.8490558,4.3619494,3a,39.4y,357.3h,114.06t/data=!3m7!1e1!3m5!1sU7yiZoIf-rfUVPs_EZ5vCw!2e0!5s20190501T000000!7i13312!8i6656",
     image: montagne,
     icon: icon_04,
     floor: 3,
