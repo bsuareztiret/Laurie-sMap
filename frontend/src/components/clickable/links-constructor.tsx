@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Icon from "./icon";
 import Card from "./card";
 import "./card.css";
@@ -24,36 +23,26 @@ const LinksConstructor: React.FC<LinksConstructorProps> = ({
 	index,
 }) => {
 	const [button, setButton] = useState(false);
-	const [appears, setAppears] = useState(false);
+	// const [appears, setAppears] = useState(false);
 
 	const switchButton = () => {
-		setAppears(!button);
-		setTimeout(() => {
-			setButton(!button);
-		}, 300);
+		setButton(!button);
 	};
 	return (
 		<React.Fragment>
-			{/* <ReactCSSTransitionGroup
-				transitionName="fade"
-				transitionEnterTimeout={300}
-				transitionLeaveTimeout={300}
-			> */}
-				{!button && !appears && (
+				{!button && (
 					<Icon image={icon} top={top} left={left} switchButton={switchButton} />
 				)}
-				{button && appears && (
-					<Card
-						type={type}
-						image={image}
-						href={href}
-						top={top}
-						left={left}
-						switchButton={switchButton}
-						index={index}
-					/>
-				)}
-			{/* </ReactCSSTransitionGroup> */}
+				{<Card
+					type={type}
+					image={image}
+					href={href}
+					top={top}
+					left={left}
+					display={button ? "preview show" : "preview"}
+					switchButton={switchButton}
+					index={index}
+				/>}
 		</React.Fragment>
 	);
 };

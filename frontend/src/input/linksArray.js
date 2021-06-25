@@ -1,7 +1,5 @@
 /* PREVIEW IMAGES */
-import nieuwgand from "../img/preview/nieuwgand.png";
 import ixelles from "../img/preview/chixelles.png";
-import gand72 from "../img/preview/gand72.png";
 import liege from "../img/preview/liegeorban.png";
 import gandstdenis from "../img/preview/gandstdenis.png";
 import miden52 from "../img/preview/miden52.png";
@@ -20,19 +18,14 @@ import icon_01 from "../img/icons/carre1.png";
 import icon_02 from "../img/icons/carre01.png";
 import icon_03 from "../img/icons/carre01b.png";
 import icon_04 from "../img/icons/carre02.png";
-import icon_05 from "../img/icons/carre03.png";
 import icon_06 from "../img/icons/carre4.png";
 import icon_07 from "../img/icons/carre04.png";
-import icon_08 from "../img/icons/carre04b.png";
-import icon_09 from "../img/icons/carre05.png";
 import icon_10 from "../img/icons/carre07.png";
 import icon_11 from "../img/icons/carre09.png";
-import icon_12 from "../img/icons/carre09b.png";
 import icon_13 from "../img/icons/carre10.png";
 import icon_14 from "../img/icons/carre11.png";
 import icon_15 from "../img/icons/carre11b.png";
 import icon_16 from "../img/icons/carre12.png";
-import icon_17 from "../img/icons/carre15.png";
 import icon_18 from "../img/icons/carre15b.png";
 import icon_19 from "../img/icons/carre16.png";
 
@@ -187,7 +180,7 @@ const linkArray = [
     // INDEX - 13
     // gand98 FLOOR 3
     top: 66,
-    left: 37.5,
+    left: 38,
     href: "https://www.google.com/maps/@51.0407493,3.7175388,3a,56.6y,80.21h,110.33t/data=!3m7!1e1!3m5!1stQbIBFzeYl9imwQ_97CiNA!2e0!5s20200801T000000!7i13312!8i6656",
     image: gand98,
     icon: icon_07,
@@ -198,7 +191,7 @@ const linkArray = [
     // INDEX - 14
     // MONTAGNE FLOOR 3
     top: 44,
-    left: 49,
+    left: 48.5,
     href: "https://www.google.be/maps/@50.8490558,4.3619494,3a,39.4y,357.3h,114.06t/data=!3m7!1e1!3m5!1sU7yiZoIf-rfUVPs_EZ5vCw!2e0!5s20190501T000000!7i13312!8i6656",
     image: montagne,
     icon: icon_04,

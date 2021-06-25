@@ -5,6 +5,7 @@ type IconProps = {
 	image: string;
 	top: number;
 	left: number;
+	// display: string;
 	switchButton: () => void;
 };
 
@@ -12,14 +13,12 @@ const Icon: React.FunctionComponent<IconProps> = ({
 	image,
 	top,
 	left,
+	// display,
 	switchButton,
 }) => {
 	return (
-		<img
-			src={image}
-			// className="z-30 overflow-hidden max-w-xs max-h-xs object-left-bottom"
-			className="z-30"
-      id="icon"
+		<div
+			className={"z-30 icon show"}
 			style={{
 				top: `${top}%`,
 				left: `${left}%`,
@@ -28,10 +27,23 @@ const Icon: React.FunctionComponent<IconProps> = ({
 				width: "20px",
 				height: "20px",
 			}}
+		>
+		<img
+			src={image}
+			// className={`z-30 ${display}`}
+			// style={{
+			// 	top: `${top}%`,
+			// 	left: `${left}%`,
+			// 	cursor: "touch",
+			// 	position: "relative",
+			// 	// width: "20px",
+			// 	// height: "20px",
+			// }}
 			onPointerDown={switchButton}
 			onClick={switchButton}
 			alt="icon-textile"
 		/>
+		</div>
 	);
 };
 

@@ -1,3 +1,16 @@
-#icon:hover {
-  opacity: 0.50;
+.icon {
+  opacity: 0;
+  transition: opacity ease 300ms;
+	overflow: hidden;
 }
+
+.icon.show {
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+

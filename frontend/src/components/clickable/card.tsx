@@ -8,6 +8,7 @@ type CardProps = {
 	top: number;
 	left: number;
 	index: number;
+	display: string;
 	switchButton: () => void;
 };
 
@@ -16,17 +17,16 @@ const Card: React.FunctionComponent<CardProps> = ({
 	href,
 	top,
 	left,
+	display,
 	switchButton,
 }) => {
 	return (
 		<div
-			className="z-40 overflow-hidden max-w-xs max-h-xs preview"
+			className={`z-40 ${display}`}
 			style={{
 				top: `${top}%`,
 				left: `${left}%`,
 				position: "relative",
-				// width: "12%",
-				// height: "10%",
 			}}
 		>
 			<button
@@ -41,14 +41,12 @@ const Card: React.FunctionComponent<CardProps> = ({
 			>
 				⨯
 			</button>
-			<a
-				className="col-start-8 text-gray-400"
-				href={href}
-				target="_blank"
-				rel="noreferrer"
-			>
-				<img src={image} alt="preview google maps" />
-			</a>
+				<img
+					src={image}
+					alt="preview google maps"
+					onClick={() => window.open(href, '_blank')}
+					onPointerDown={() => window.open(href, '_blank')}
+				/>
 		</div>
 	);
 };

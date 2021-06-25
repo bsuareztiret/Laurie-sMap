@@ -1,27 +1,18 @@
 .preview {
+	width: 0%;
+	height: 0%;
+	opacity: 0;
+	transition: opacity ease 300ms;
+	overflow: hidden;
+}
+
+.preview.show {
 	width: 12%;
 	height: 10%;
+	opacity: 1;
 }
 
 .preview:hover {
 	width: 12.5%;
 	height: 10.5%;
-}
-
-.fade-enter {
-	opacity: 0;
-}
-
-.fade-enter-active {
-	opacity: 1;
-	transition: opacity 400ms ease-out;
-}
-
-.fade-leave {
-	opacity: 1;
-}
-
-.fade-leave-active {
-	opacity: 0;
-	transition: opacity 400ms;
 }
