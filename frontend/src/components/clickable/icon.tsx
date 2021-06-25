@@ -5,7 +5,6 @@ type IconProps = {
 	image: string;
 	top: number;
 	left: number;
-	// display: string;
 	switchButton: () => void;
 };
 
@@ -13,7 +12,6 @@ const Icon: React.FunctionComponent<IconProps> = ({
 	image,
 	top,
 	left,
-	// display,
 	switchButton,
 }) => {
 	return (

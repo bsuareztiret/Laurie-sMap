@@ -23,26 +23,30 @@ const LinksConstructor: React.FC<LinksConstructorProps> = ({
 	index,
 }) => {
 	const [button, setButton] = useState(false);
-	// const [appears, setAppears] = useState(false);
+	const [appears, setAppears] = useState(false);
 
 	const switchButton = () => {
 		setButton(!button);
+		setTimeout(() => {
+			setAppears(!button);
+		}, 300);
 	};
 	return (
 		<React.Fragment>
 				{!button && (
 					<Icon image={icon} top={top} left={left} switchButton={switchButton} />
 				)}
-				{<Card
+				{button && appears && (<Card
 					type={type}
 					image={image}
 					href={href}
 					top={top}
 					left={left}
-					display={button ? "preview show" : "preview"}
+					display={appears ? "preview show" : "preview"}
 					switchButton={switchButton}
 					index={index}
-				/>}
+				/>
+				)}
 		</React.Fragment>
 	);
 };
