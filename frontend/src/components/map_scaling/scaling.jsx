@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
-import background from "../../img/backgroundG.jpg";
+import background from "../../img/background.png";
 
   const Scaling = (links) => {
   const [state, setState] = useState({value: {scale: 0.5, translation: {x:213, y:70}}});
@@ -61,7 +61,7 @@ import background from "../../img/backgroundG.jpg";
   return (
     <MapInteractionCSS
       value={state.value}
-      className="grid grid-colone-2"
+      // className="grid grid-colone-2"
       onChange={(value) => setUpLimit(value)}
       translationBounds={{ xMin: -minX, xMax: maxX, yMin: -minY, yMax: maxY}}
     >

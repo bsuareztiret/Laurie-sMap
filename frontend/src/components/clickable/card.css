@@ -2,7 +2,7 @@
 	width: 0%;
 	height: 0%;
 	opacity: 0;
-	transition: opacity ease 300ms;
+	transition: opacity ease-out 300ms;
 	overflow: hidden;
 }
 

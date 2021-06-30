@@ -42,7 +42,7 @@ const LinksConstructor: React.FC<LinksConstructorProps> = ({
 					href={href}
 					top={top}
 					left={left}
-					display={appears ? "preview show" : "preview"}
+					display={button ? "preview show" : "preview"}
 					switchButton={switchButton}
 					index={index}
 				/>
