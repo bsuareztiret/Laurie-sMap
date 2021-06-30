@@ -21,8 +21,8 @@ const LinksDisplay: React.FC<LinksDisplayProps> = ({
 	floor,
 }: LinksDisplayProps) => {
 	const list = link.map((element, index) => {
-		// if (floor >= element.floor) {
-		if (floor <= element.floor) {
+		if (floor >= element.floor) {
+		// if (floor <= element.floor) {
 			return (
 				<div style={{ position: "absolute", width: "100%", height: "100%" }}
 				key={`index:${index}-${element.href}`}>
