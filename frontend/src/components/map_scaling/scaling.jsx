@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { MapInteractionCSS } from "react-map-interaction";
-import background from "../../img/background.png";
+// import background from "../../img/background.png";
+// import background from "../../img/goodnow.png";
+import background from "../../img/gg.png";
 
   const Scaling = (links) => {
   const [state, setState] = useState({value: {scale: 0.5, translation: {x:213, y:70}}});
