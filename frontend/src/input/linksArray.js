@@ -35,7 +35,7 @@ const linkArray = [
   {
     // INDEX - 01
     // LEOPOLD FLOOR 0
-    top: 22.5,
+    top: 22,
     left: 65.5,
     href: "https://www.google.com/maps/@50.8636166,4.4021146,3a,81.2y,84.22h,128.12t/data=!3m7!1e1!3m5!1sQCUYasxg5I2cUidkFX_Flw!2e0!5s20200901T000000!7i13312!8i6656",
     image: leopold3,
@@ -47,7 +47,7 @@ const linkArray = [
     // INDEX - 02
     // miden52 FLLOR 0
     top: 81.5,
-    left: 12.75,
+    left: 12,
     href: "https://www.google.com/maps/@52.3652986,4.9148961,3a,75y,194.64h,122.37t/data=!3m7!1e1!3m5!1sPW47XEiywmaZMU6llRaOlg!2e0!5s20201201T000000!7i13312!8i6656",
     // href: "https://www.google.com/maps/@51.0271212,3.7020128,3a,75y,250.24h,102.8t/data=!3m7!1e1!3m5!1sFJSOtCrBh9yO28tYh-Romg!2e0!5s20110301T000000!7i13312!8i6656",
     image: miden52,
@@ -62,7 +62,7 @@ const linkArray = [
   {
     // INDEX - 03
     // GAND FLOOR 0
-    top: 75.75,
+    top: 77,
     left: 74,
     // href: "https://www.google.com/maps/@51.0359812,3.6952585,3a,75y,146.11h,98.16t/data=!3m7!1e1!3m5!1skNoKWYXg8ehEPbiSfuZk9w!2e0!5s20170501T000000!7i13312!8i6656",
     href: "https://www.google.com/maps/@51.064782,3.7183506,3a,45.4y,351.93h,111.24t/data=!3m7!1e1!3m5!1sbbaVKM3qVqQQ5Zy0_IOSvg!2e0!5s20170601T000000!7i13312!8i6656",
@@ -74,7 +74,7 @@ const linkArray = [
   {
     // INDEX - 04
     // UNKNWON FLOOR 0
-    top: 42,
+    top: 42.25,
     left: 17.5,
     href: "https://www.google.com/maps/@50.8347551,4.363633,3a,75y,183.88h,106.97t/data=!3m7!1e1!3m5!1sGbep5MJDJN648E5P44soaw!2e0!5s20200601T000000!7i13312!8i6656",
     image: ixelles,
@@ -90,7 +90,7 @@ const linkArray = [
     // INDEX - 05
     // gandstdenis FLOOR 1
     top: 70,
-    left: 15,
+    left: 14,
     href: "https://www.google.com/maps/@47.1943441,-1.5626691,3a,30.4y,232.76h,96.8t/data=!3m7!1e1!3m5!1sprw77hRikeHBtUDhy25lrA!2e0!5s20170801T000000!7i13312!8i6656",
     image: loire,
     icon: icon_01,
@@ -105,7 +105,7 @@ const linkArray = [
     // INDEX - 06
     // NEWGANG FLOOR 1
     top: 32,
-    left: 45.75,
+    left: 45.5,
     href: "https://www.google.com/maps/@50.6278783,5.57245,3a,40.9y,190.09h,106.81t/data=!3m7!1e1!3m5!1s2Xn8qvpgfSXJBUKciOlwMQ!2e0!5s20190601T000000!7i13312!8i6656",
     // href: "https://www.google.com/maps/@51.0546349,3.7327072,3a,75y,185.43h,109.72t/data=!3m7!1e1!3m5!1sj_lSdAOTlc8DSNcScy6Hlg!2e0!5s20130801T000000!7i13312!8i6656",
     image: liege,
@@ -117,7 +117,7 @@ const linkArray = [
     // INDEX - 07
     // IXELLES FLOOR 1
     top: 57,
-    left: 15.75,
+    left: 14.5,
     href: "https://www.google.com/maps/@51.0271212,3.7020128,3a,75y,249.27h,100.85t/data=!3m7!1e1!3m5!1sFJSOtCrBh9yO28tYh-Romg!2e0!5s20190601T000000!7i13312!8i6656",
     image: gandstdenis,
     icon: icon_06,
@@ -144,7 +144,7 @@ const linkArray = [
     // INDEX - 09
     // raven16 FLOOR 1
     top: 34,
-    left: 60,
+    left: 60.5,
     href: "https://www.google.com/maps/@50.8411568,4.3750556,3a,75y,324.15h,115.38t/data=!3m7!1e1!3m5!1scnyER_xgaTszjw7BB9A3hw!2e0!5s20201001T000000!7i13312!8i6656",
     // href: "https://www.google.com/maps/@50.8443396,4.3593693,3a,75y,49.12h,114.92t/data=!3m6!1e1!3m4!1sSkIhkyZW-957UN_bp4Og3Q!2e0!7i13312!8i6656",
     image: beliard,
@@ -157,7 +157,7 @@ const linkArray = [
     // INDEX - 10
     // LIEGE FLOOR 2
     top: 42.5,
-    left: 36,
+    left: 34.75,
     href: "https://www.google.com/maps/@51.0359812,3.6952585,3a,37.1y,150.21h,97.24t/data=!3m7!1e1!3m5!1skNoKWYXg8ehEPbiSfuZk9w!2e0!5s20200901T000000!7i13312!8i6656",
     // href: "https://www.google.com/maps/@50.6278783,5.57245,3a,75y,201.22h,105.19t/data=!3m7!1e1!3m5!1s2Xn8qvpgfSXJBUKciOlwMQ!2e0!5s20170501T000000!7i13312!8i6656",
     image: gand431,
